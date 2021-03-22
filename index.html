@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +8,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Opa!</h1>
-    </header>
+    <script defer src="script.js"></script>
+    <div id="bar">
+        <div id="bar-header">
+            <p>WesleyLimaS</p>
+        </div>
+    </div>
     <section>
-        <!-- Estas são apenas ulgumas paginas aleatorias que fiz para testar o GitHub Pages (Sou iniciante) -->
-        <p class="">Meu nome é <strong>Wesley Silva</strong>.</p>
-        <div id="tip">
-            <h2>Dica</h2>
-            <p>Clique no botão abaixo para saber se você é bonito(a).</p>
+        <div id="apresentacao" class="topico">
+            <div id="cabe-topico-quem-sou" class="cabe-topico">
+                <h2 class="titulo-topico">Quem sou &#x1F604;</h2>
+            </div>
+            <div id="cont-topico-quem-sou" class="cont-topico">
+                <p>Meu nome é <strong>Wesley Silva</strong>, tenho <strong>14 anos</strong> e atualmente estou estudando <strong>desenvolvimento web</strong>. Posso te dizer que é muito empolgante, mas exige bastante foco e persistência. &#x1F628;</p>
+                <p>Eu diria que ainda estou no básico, apesar de ter aprendido muito, afinal há muitas áreas específicas e muito à se aprender.</p>
+                <h3>Saiba mais</h3>
+                <p>Apesar de estar atualmente trilhando o caminho de um <strong>desenvolvedor web front-end</strong>, eu trabalho ainda com <strong>Python</strong> para resolução de problemas simples e idéias malucas que surgem.</p>
+                <p><a href="#">Aprenda mais</a> &#x1F632;</p>
+            </div>
         </div>
-        <div id="res">
-            
+        <!-- conteudo do site de forma resumida e lateral -->
+        <div id="conteudo-site" class="topico">
+            <div class="cabe-topico">
+                <p>Contéudo do site</p>
+            </div>
+            <div class="cont-topico">
+                <a href="games/">Jogos</a>
+                <a href="#">Serviços</a>
+            </div>
         </div>
-        <button id="play" onclick="eBonito()">Quero saber!</button> <br>
     </section>
+    <main>
+        <!--  jogos -->
+        <div id="jogos" class="topico">
+            <div class="cabe-topico">
+                <h2 class="titulo-topico">Jogos</h2>
+            </div>
+            <div class="cont-topico">
+                <dl>
+                    <dt><a href="games/adivinhe-o-numero/">Adivinhe o Número</a></dt>
+                    <dd>
+                        <p>Tente acertar o número escolhido pelo computador! Neste jogo simples, porém divertido, você testa sua sorte.</p>
+                        <p>Neste cenário, o computador escolheu um número aleatório entre 1 e 100. Sua tarefa é descobrir e palpitar este número.</p>
+                    </dd>
+                </dl>
+                <p><a href="games/">Ver todos</a></p>
+            </div>
+        </div>
+    </main>
     <footer>
-        Este é um projeto pessoal de Wesley Silva para fins de aprendizado. <br> Por favor, não compartilhe a URL relativa a esta página. <br>
-        &copy; 2021 <a href="https://github.com/WesleyLimaS" target="_blank" rel="author">WesleyLimaS</a>. Todos os direitos reservados.
+        
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

@@ -1,20 +1,23 @@
-function eBonito() {
-    let btnPlay = document.getElementById('play')
-    let res = document.getElementById('res')
-    let n = Math.ceil(Math.random()*2)
+let cabQuemSou = document.getElementById('cabe-topico-quem-sou')
+let contQuemSou = document.getElementById('cont-topico-quem-sou')
+let qsVisivel = false
 
-    res.innerHTML = ''
-    let p = document.createElement('p')
-    p.style.color = 'white'
-    p.style.maxWidth = '400px'
-    p.style.marginLeft = 'auto'
-    p.style.marginRight = 'auto'
-    if (n == 1) {
-        p.innerText = `Você é feio(a)!`
-        p.style.backgroundColor = 'rgb(141, 4, 4)'
-    } else {
-        p.innerText = `Você é bonito(a)!`
-        p.style.backgroundColor = 'rgb(22, 77, 20)'
-    }
-    res.appendChild(p)
+function mostrarQuemSou() {
+    contQuemSou.style.display = 'block'
+    contQuemSou.style.visibility = 'visible'
+    qsVisivel = true
 }
+
+function escQuemSou() {
+    contQuemSou.style.display = 'none'
+    contQuemSou.style.visibility = 'hidden'
+    qsVisivel = false
+}
+
+cabQuemSou.addEventListener('click', function () {
+    if (qsVisivel) {
+        escQuemSou()
+    } else {
+        mostrarQuemSou()
+    }
+})
