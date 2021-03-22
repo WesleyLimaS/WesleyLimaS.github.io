@@ -1,23 +1,38 @@
-let cabQuemSou = document.getElementById('cabe-topico-quem-sou')
-let contQuemSou = document.getElementById('cont-topico-quem-sou')
-let qsVisivel = false
+let cabecalhos
+let conteudos
 
-function mostrarQuemSou() {
-    contQuemSou.style.display = 'block'
-    contQuemSou.style.visibility = 'visible'
-    qsVisivel = true
-}
+function inicializar() {
+    cabecalhos = document.getElementsByClassName('cabe-topico')
+    conteudos = document.getElementsByClassName('cont-topico')
 
-function escQuemSou() {
-    contQuemSou.style.display = 'none'
-    contQuemSou.style.visibility = 'hidden'
-    qsVisivel = false
-}
-
-cabQuemSou.addEventListener('click', function () {
-    if (qsVisivel) {
-        escQuemSou()
-    } else {
-        mostrarQuemSou()
+    for (let i = 0; i < cabecalhos.length; i++) {
+       cabecalhos[i].addEventListener('click', function () {
+            if (conteudoVisivel(conteudos[i])) {
+                esconderConteudo(conteudos[i])
+            } else {
+                mostrarConteudo(conteudos[i])
+            }
+        }) 
     }
-})
+}
+
+inicializar()
+
+function conteudoVisivel(topico) {
+    if (topico.style.visibility == 'visible') {
+        return true
+    } else if (topico.style.visibility == 'hidden') {
+        return false
+    }
+}
+
+function mostrarConteudo(topico) {
+    topico.style.display = 'block'
+    topico.style.visibility = 'visible'
+}
+
+function esconderConteudo(topico) {
+    topico.style.display = 'none'
+    topico.style.visibility = 'hidden'
+}
+

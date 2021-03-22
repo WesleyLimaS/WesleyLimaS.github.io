@@ -1,24 +1,28 @@
 body, html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18pt;
+    font-size: 14pt;
     text-align: justify; 
     margin: 0px;
     margin-bottom: 12px;
-    height: 100%;
-    width: 100%;
     color: white;
     background-image: url('../../media/background-image-black-450.png');
 }
 
 section {
-    width: 480px;
-    margin-left: auto; margin-right: auto;
+    margin: auto;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #output {
-    padding: 20px;
-    border: 2px solid rgb(143, 58, 177);
+    max-width: 825px;
+    max-height: max-content;
+    border: 0.3px solid gray;
     border-radius: 2px;
+    display: block;
+    background-color: #232323;
+    margin-left: 10px;
 }
 
 footer {
@@ -45,50 +49,73 @@ div#bar-header {
     line-height: 50px;
 }
 
-div#bar-header p {
+div#bar-header p, div#bar-header a {
     margin: 0;
     display: inline;
+    color: white;
 }
 
-@media (max-width: 540px) {
-    #bar {
-        border-bottom-right-radius: 5px;
-        position: fixed;
-        top: 0;
-        left: 0;
+.btn {
+    width: 150px;
+    height: 40px;
+    background-color: blueviolet;
+    border: 0.3px solid gray;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+input#txtpal {
+    height: 33px;
+    font-size: 13pt;
+}
+
+@media (max-width: 1200px) {
+    .topico {
+        max-width: 800px;
     }
+    #output {
+        max-width: 670px;
+    }
+}
+
+@media (max-width: 1100px) {
     section {
-        margin-top: 60px;
-        width: 420px;
+        display: block;
     }
-    body {
-        font-size: 17pt;
+    .topico {
+        max-width: 700px;
+    }
+    #output {
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 540px) {
+    body, #bar {
+        font-size: 13pt;
+    }
+    footer {
+        font-size: 12pt;
     }
 }
 
 @media (max-width: 480px) {
-    section {
-        width: 360px;
+    body, #bar{
+        font-size: 12pt;
     }
-    body {
-        font-size: 16pt;
+    .cabe-topico {
+        display: block;
     }
 }
 
-@media (max-width: 440px) {
-    section {
-        width: 340px;
+@media (max-width: 400px) {
+    input#txtpal, #adiv-numero .btn {
+        margin-top: 7px;
+        text-align: center;
     }
-    body {
-        font-size: 12pt;
-    }
-}
-
-@media (max-width: 380px) {
-    section {
-        width: 280px;
-    }
-    body {
-        font-size: 12pt;
+    footer {
+        font-size: 10pt;
     }
 }

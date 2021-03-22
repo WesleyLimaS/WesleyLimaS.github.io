@@ -32,9 +32,10 @@ div#bar-header {
     line-height: 50px;
 }
 
-div#bar-header p {
+div#bar-header p, div#bar-header a {
     margin: 0;
     display: inline;
+    color: white;
 }
 
 section {
@@ -45,8 +46,6 @@ section {
 
 main {
     margin: 12px;
-    /* max-width: 825; */
-    position: absolute;
 }
 
 .topico {
@@ -120,10 +119,11 @@ dd {
 }
 
 dt {
-    font-size: 23px;
+    font-size: 19px;
     border: 1px solid rgb(132, 79, 175);
-    padding: 12px;
+    padding: 10px;
 }
+
 @media (max-width: 1000px) {
     #conteudo-site {
         width: 300px;
@@ -145,7 +145,7 @@ dt {
         display: none;
         visibility: hidden;
     }
-    #cont-topico-quem-sou {
+    .cont-topico {
         display: none;
         visibility: hidden;
     }

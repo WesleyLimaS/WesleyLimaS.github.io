@@ -57,9 +57,9 @@ dd {
 }
 
 dt {
-    font-size: 23px;
+    font-size: 19px;
     border: 1px solid rgb(132, 79, 175);
-    padding: 12px;
+    padding: 10px;
 }
 
 
@@ -79,9 +79,10 @@ div#bar-header {
     line-height: 50px;
 }
 
-div#bar-header p {
+div#bar-header p, div#bar-header a {
     margin: 0;
     display: inline;
+    color: white;
 }
 
 

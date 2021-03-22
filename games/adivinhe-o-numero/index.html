@@ -12,15 +12,21 @@
     <script defer src="script.js"></script>
     <div id="bar">
         <div id="bar-header">
-            <a href="../../">Voltar</a>
-            <p>WesleyLimaS <strong>Games</strong> </p>
+            <p><a href="../">WesleyLimaS <strong>Games</strong></a></p>
         </div>
     </div>
     <section>
-        <h1>Jogo adivinhe o número</h1>
-        <p>Nós selecionamos um número aleatório entre <strong>1 e 100</strong>. Veja se consegue acertar em <strong>10 chances ou menos</strong>. Nós lhe diremos se seu palpite foi muito alto ou muito baixo.</p>
-        <p>Digite seu palpite: <input type="number" name="palpite" id="txtpal" placeholder="Tente o número 23"> <button id="btn-enviar">Enviar palpite</button></p>
-        <div id="output">
+        <div id="adiv-numero" class="topico">
+            <div id="cabe-topico-adiv-numero" class="cabe-topico">
+                <a id="back" href="../">Voltar</a>
+                <h2 class="titulo-topico">Jogo adivinhe o Número</h2>
+            </div>
+            <div id="cont-topico-adiv-numero" class="cont-topico">
+                <p>Nós selecionamos um número aleatório entre <strong>1 e 100</strong>. Veja se consegue acertar em <strong>10 chances ou menos</strong>. Nós lhe diremos se seu palpite foi muito alto ou muito baixo.</p>
+                <p>Digite seu palpite: <input type="number" name="palpite" id="txtpal" value="49" placeholder="Tente o número 23"> <button id="btn-enviar" class="btn">Enviar palpite</button></p>
+            </div>
+        </div>
+        <div class="cabe-topico" id="output">
             Os resultados vão aparecer aqui
         </div> 
     </section>

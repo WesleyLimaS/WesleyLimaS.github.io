@@ -14,6 +14,7 @@ function novoJogo() {
     inpPal.disabled = false
     inpPal.value = ''
     btn.disabled = false
+    disabled(btn, false)
     res.innerHTML = ''
     res.innerText = 'Os resultados vão aparecer aqui'
 }
@@ -52,7 +53,7 @@ function mostrarResul() {
     if (palpites.length == 10 || pal == nEsc) {
         // em ambos a rodada é finalizada
         if (palpites.length == 10) {
-            resul.innerText = 'Fim de jogo!'
+            resul.innerText = `Fim de jogo. O número era ${nEsc}.`
             resul.style.backgroundColor = 'red' 
         } else {
             resul.innerText = 'Acertou!'
@@ -65,21 +66,47 @@ function mostrarResul() {
         resul.innerText = 'Errado!'
         resul.style.backgroundColor = 'red'
         // dica para o usuario
-        if (pal > nEsc) {
-            dica.innerText = 'Seu palpite foi muito alto!'
-        } else {
-            dica.innerText = 'Seu palpite foi muito baixo!'
-        }
+        let msg = configDica(pal)
+        dica.innerText = msg
     }
     res.appendChild(resul)
     res.appendChild(dica)
 }
 
+function configDica(palpite) {
+    if (!(palpite > nEsc)) {
+        if (palpite > (nEsc*90/100)) {
+            return 'Seu palpite foi bem próximo!'
+        } else if (palpite > (nEsc*70/100)) {
+            return 'Seu palpite foi um pouco baixo!'
+        } else if (palpite > (nEsc*40/100)) {
+            return 'Tente um valor mais alto!'
+        } else if (palpite > (nEsc*10/100)) {
+            return 'Seu palpite foi baixo!'
+        } else {
+            return 'Seu palpite foi MUITO baixo!'
+        } 
+    } else {
+        return 'Seu palpite foi alto!'
+    }
+    
+}
+
+function disabled(element, disabled=true) {
+    if (disabled) {
+        element.style.opacity = '50%'
+    } else {
+        element.style.opacity = '100%'
+    }
+}
+
 function configFimDeJogo() {
     inpPal.disabled = true
     btn.disabled = true
+    disabled(btn)
     let nGame = document.createElement('button')
     nGame.innerText = 'Iniciar novo jogo'
+    nGame.className = 'btn'
     res.appendChild(nGame)
     nGame.addEventListener('click', novoJogo)
 }
