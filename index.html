@@ -1,20 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WesleyLimaS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/slider_style.css">
+    <link rel="stylesheet" href="styles/bar.css">
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <script defer src="script.js"></script>
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/destaque.js"></script>
+    <script defer src="scripts/slider.js"></script>
     <div id="bar">
         <div id="bar-header">
             <p><a href=".">WesleyLimaS <strong>Home</strong></a></p>
         </div>
     </div>
+    <!--  DESTAQUE  -->
+    <div class="destaque" id="historia-quadrinhos">
+        <p class="topico-dest">Em destaque</p>
+        <h2 class="titulo-dest">Minha história em quadrinhos</h2>
+        <div id="coluna-prev-acess">
+            <div  id="dvslider">
+                <button class="btSlider" id="anterior">&lt;</button>
+                <div id="dvload">
+                <div id="dvbarra"></div>
+                </div>
+                <button class="btSlider" id="proxima">&gt;</button>
+            </div>
+            <div id="acessar-destaque">
+                <a href="quadrinhos/o-mundo-dos-lagartos/"><img src="media/arrow-left-purple.png" alt="Acessar agora"></a>
+            </div>
+        </div>
+        <h3>ForceLizards</h3>
+        <!-- INFORMAÇÕES -->
+        <div class="dest-info">
+            <p>Imagine um mundo onde os <strong>lagartos</strong> são a espécie dominante. Léo é um <strong>lagarto</strong> da tribo dos azuis. Luli é da tribo dos verdes.</p>
+            <p id="dest-cont-addi">
+                Apesar de serem de <strong>tribos diferentes</strong>, esses dois são <strong>grandes amigos</strong>. Ambos estão treinando à dias sabe-se lá porque.
+            </p>
+            <button id="show-more">Mostrar mais</button> <br>
+            <a id="dest-access-link" href="quadrinhos/o-mundo-dos-lagartos/">Mais sobre esta história</a>
+        </div>
+    </div>
     <section>
+        <!-- APRESENTAÇÃO -->
         <div id="apresentacao" class="topico">
             <div id="cabe-topico-quem-sou" class="cabe-topico">
                 <h2 class="titulo-topico">Quem sou</h2>
@@ -53,28 +86,8 @@
                     </dd>
                     <dt><a href="games/">Ver todos</a></dt>
                 </dl>
-                <p class="saibamais"></p>
-            </div>
-        </div>
-        <div id="jogos" class="topico">
-            <div id="cab-topico-jogos" class="cabe-topico">
-                <h2 class="titulo-topico">Jogos</h2>
-            </div>
-            <div id="cont-topico-jogos" class="cont-topico">
-                <dl>
-                    <dt><a href="games/adivinhe-o-numero/">Adivinhe o Número</a></dt>
-                    <dd>
-                        <p>Tente acertar o número escolhido pelo computador! Neste jogo simples, porém divertido, você testa sua sorte.</p>
-                        <p>Neste cenário, o computador escolheu um número aleatório entre 1 e 100. Sua tarefa é descobrir e palpitar este número.</p>
-                    </dd>
-                    <dt><a href="games/">Ver todos</a></dt>
-                </dl>
-                <p class="saibamais"></p>
             </div>
         </div>
     </main>
-    <footer>
-        
-    </footer>
 </body>
 </html>

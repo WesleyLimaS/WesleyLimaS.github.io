@@ -1,0 +1,159 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin: 0;
+    color: white;
+    font-size: 14pt;
+    background-image: url('../../media/background-image-black-450.png');
+}
+
+/* GLOBAIS */
+a.destaque {
+    text-decoration: solid;
+    color: rgb(132, 79, 175);
+    border: 1px solid;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.subtitle {
+    color: rgb(120, 42, 165);
+}
+
+/* SECTION E MAIN */
+section {
+    margin: 12px;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CONTEUDO LATERAL E PRINCIPAL SETTINGS */
+#cont-princ, #cont-lateral {
+    display: block;
+    padding: 12px;
+    border: 0.1px solid gray;
+    height: max-content;
+}
+#cont-princ {
+    background-color: rgba(14, 14, 14, 0.39);
+    padding-bottom: 25px;
+}
+#cont-lateral {
+    background-color: rgba(0, 0, 0, 0.39);
+    margin-left: 5px;
+}
+#cont-lateral .info-lateral {
+    max-inline-size: 960px;
+}
+
+/* TOP */
+#top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(27, 27, 27);
+    border: 0.1px solid gray;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+#top a {
+    color: white;
+    height: max-content;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1000px) {
+    #ilus-repres {
+        max-width: 270px;
+    }
+}
+@media (max-width: 900px) {
+    #top {
+        font-size: 18px;
+    }
+    .subtitle {
+        font-size: 25px;
+    }
+    section {
+        font-size: 18px;
+    }
+    #ilus-repres {
+        max-width: 250px;
+    }
+}
+@media (max-width: 800px) {
+    .subtitle {
+        font-size: 23px;
+    }
+    section {
+        font-size: 18px;
+    }
+    #ilus-repres {
+        max-width: 220px;
+    }
+}
+@media (max-width: 720px) {
+    #cont-lateral {
+        margin-left: 0; margin-top: 5px;
+    }
+    main {
+        display: block;
+    }
+    #top {
+        font-size: 16px;
+    }
+    .subtitle {
+        font-size: 21px;
+    }
+    section {
+        font-size: 19px;
+    }
+    #ilus-repres {
+        max-width: 200px;
+    }
+}
+@media (max-width: 490px) {
+    #top {
+        font-size: 15px;
+    }
+    .subtitle {
+        font-size: 19px;
+    }
+    section {
+        font-size: 15px;
+    }
+    #ilus-repres {
+        max-width: 180px;
+    }
+    a.destaque {
+        padding: 2px;
+        margin-bottom: 3px;
+    }
+}
+
+@media (max-width: 390px) {
+    .subtitle {
+        font-size: 17px;
+    }
+    section, .p-destaque {
+        font-size: 12px;
+    }
+    #ilus-repres {
+        max-width: 150px;
+    }
+    #bar-header {
+        font-size: 18px;
+    }
+    a.destaque {
+        font-size: 12px;
+    }
+}
+@media (max-width: 350px) {
+    #bar-header {
+        font-size: 15px;
+    }
+    a.destaque {
+        font-size: 11px;
+    }
+}

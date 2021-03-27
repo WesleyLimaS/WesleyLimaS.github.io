@@ -1,0 +1,252 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin: 0;
+    color: white;
+    font-size: 14pt;
+    background-image: url('../../../media/background-image-black-450.png');
+}
+
+section {
+    margin: 12px;
+}
+
+#cont-princ {
+    background-color: rgba(0, 0, 0, 0.281);
+    display: flex;
+    justify-content: space-between;
+}
+
+#info {
+    margin: 4px;
+    text-align: center;     
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 6px;
+    border: 1px solid gray;
+    height: max-content;
+}
+
+#controles {
+    max-width: 400px;
+    margin: 12px;
+}
+#controles button {
+    background-color: transparent;
+    display: block;
+    width: 200px;
+    max-height: 60px;
+    font-size: 13pt;
+    cursor: pointer;
+    color: rgb(132, 79, 175);
+    border: 1px solid;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+/* CARDS SETTINGS */
+.card-info p {
+    margin: 0;
+    font-size: 12pt;
+}
+.item {
+    margin-bottom: 4px;
+    display: flex;
+    border: 1px solid gray;
+}
+.item .quest, .item .resp {
+    padding: 5px;
+}
+.item .quest {
+    background-color: rgb(76, 55, 133);
+}
+.item .resp {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(153, 153, 153);
+}
+.item .resp a {
+    text-decoration: none;
+    color: rgb(142, 64, 179);
+}
+
+/* PAGINA */
+#pagina {
+    width: 500px;
+    height: 790px;
+    background-image: url('../../../media/paginas-quadrinhos/pagina0.png');
+    background-repeat: round;
+}
+
+@media (max-width: 1080px){
+    #pagina {
+        max-width: 400px;
+        max-height: 690px;
+        background-image: url('../../../media/paginas-quadrinhos/pagina0.png');
+        background-repeat: round;
+    }
+    #controles button {
+        max-width: 190px;
+        max-height: 60px;
+        font-size: 12pt;
+    }
+}
+@media (max-width: 960px){
+    .card-info p {
+        font-size: 11pt;
+    }
+    #info h2 {
+        font-size: 15pt;
+    }
+}
+@media (max-width: 925px){
+    .card-info p {
+        font-size: 10pt;
+    }
+    #info h2 {
+        font-size: 14pt;
+    }
+    #controles button {
+        max-width: 140px;
+        max-height: 60px;
+        font-size: 11pt;
+    }
+}
+@media (max-width: 890px){
+    .card-info p {
+        font-size: 10pt;
+    }
+    #info h2 {
+        font-size: 13pt;
+    }
+    #controles button {
+        max-width: 100px;
+        max-height: 60px;
+        font-size: 10pt;
+    }
+}
+@media (max-width: 800px){
+    .card-info p {
+        font-size: 10pt;
+    }
+    #top {
+        font-size: 12pt;
+    }
+    #pagina {
+        max-width: 320px;
+        max-height: 590px;
+    }
+    #info h2 {
+        font-size: 13pt;
+    }
+    #controles button {
+        max-width: 100px;
+        max-height: 60px;
+        font-size: 10pt;
+    }
+}
+@media (max-width: 780px){
+    .card-info p {
+        font-size: 10pt;
+    }
+    main {
+        display: flex;
+    }
+    #top {
+        font-size: 11pt;
+    }
+    #pagina {
+        max-width: 340px;
+        max-height: 580px;
+    }
+    #info {
+        max-width: 250px;
+    }
+    #info h2 {
+        font-size: 14pt;
+    }
+    #controles button {
+        max-width: 80px;
+        font-size: 9pt;
+    }
+    #controles {
+        opacity: 100%;
+    }
+}
+@media (max-width: 700px){
+    .card-info p {
+        font-size: 10pt;
+    }
+    #top {
+        font-size: 11pt;
+    }
+    #pagina {
+        max-width: 410px;
+        max-height: 680px;
+        margin: auto;
+    }
+    #info h2 {
+        font-size: 13pt;
+    }
+    #controles {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        background-color: #1b1b1bda;
+    }
+    #controles button {
+        margin: 0;
+        max-width: 120px;
+        font-size: 11pt;
+        color: white;
+    }
+}
+@media (max-width: 670px){
+    #pagina {
+        max-width: 340px;
+        max-height: 580px;
+    }
+    
+}
+@media (max-width: 618px){
+    #pagina {
+        max-width: 300px;
+        max-height: 480px;
+    }
+    #info {
+        max-width: 190px;
+    }
+    #info p {
+        font-size: 10pt;
+    }
+    #bar-header {
+        font-size: 16pt;
+    }
+    #controles button {
+        max-width: 80px;
+        font-size: 10pt;
+    }
+}
+@media (max-width: 560px){
+    #pagina {
+        max-width: 460px;
+        max-height: 680px;
+    }
+    main {
+        display: block;
+    }
+    #info {
+        margin-left: 0;
+        max-width: 800px;
+    }
+    #info h2 {
+        font-size: 16pt;
+    }
+    #info p {
+        font-size: 12pt;
+    }
+}
+@media (max-width: 500px){
+    #pagina {
+        max-width: 420px;
+        max-height: 640px;
+    }
+}

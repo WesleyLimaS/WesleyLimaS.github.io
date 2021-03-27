@@ -1,0 +1,73 @@
+#dvslider {
+    width: 400px;
+    max-width: 470px;
+    height: 200px;
+    max-height: 200px;
+    border: 1px solid black;
+    display: flex;
+    background-position: bottom;
+    justify-content: space-between;;
+    align-items: center;
+    padding: 12px;
+}
+.btSlider {
+    background-color: rgba(0, 0, 0, 0.377);
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    height: 30%;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+#dvload {
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 35%;
+    border: 1px solid rgb(0, 0, 0);
+}
+#dvbarra {
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+@media (max-width: 1000px) {
+    #dvslider {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 630px) {
+    #dvslider {
+        padding: 12px;
+        background-color: blue;
+        max-width: 370px;
+        margin: auto;
+    }
+    #acessar-destaque {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 410px) {
+    #dvslider {
+        max-width: 305px;
+    }
+}
+
+@media (max-width: 360px) {
+    #dvslider {
+        max-width: 260px;
+        max-height: 130px;
+    }
+}
+
+@media (max-width: 320px) {
+    #dvslider {
+        max-width: 190px;
+        max-height: 100px;
+    }
+}
