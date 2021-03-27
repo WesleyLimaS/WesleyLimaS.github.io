@@ -11,6 +11,14 @@ section {
     margin: 12px;
 }
 
+#watermark {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 10pt;
+    font-style: italic;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.295);
+}
 #cont-princ {
     background-color: rgba(0, 0, 0, 0.281);
     display: flex;
@@ -56,7 +64,8 @@ section {
     padding: 5px;
 }
 .item .quest {
-    background-color: rgb(76, 55, 133);
+    font-size: 13pt;
+    /* background-color: rgb(42, 95, 131); */
 }
 .item .resp {
     margin-left: 10px;
@@ -72,7 +81,8 @@ section {
 #pagina {
     width: 500px;
     height: 790px;
-    background-image: url('../../../media/paginas-quadrinhos/pagina0.png');
+    background-color: blue;
+    /* background-image: url('../../../media/paginas-quadrinhos/pagina0.png'); */
     background-repeat: round;
 }
 
@@ -128,7 +138,7 @@ section {
         font-size: 10pt;
     }
     #top {
-        font-size: 12pt;
+        font-size: 16pt;
     }
     #pagina {
         max-width: 320px;
@@ -151,7 +161,7 @@ section {
         display: flex;
     }
     #top {
-        font-size: 11pt;
+        font-size: 15pt;
     }
     #pagina {
         max-width: 340px;
@@ -176,7 +186,7 @@ section {
         font-size: 10pt;
     }
     #top {
-        font-size: 11pt;
+        font-size: 13pt;
     }
     #pagina {
         max-width: 410px;

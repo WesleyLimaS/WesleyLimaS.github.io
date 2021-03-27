@@ -115,29 +115,29 @@ main {
 }
 @media (max-width: 490px) {
     #top {
-        font-size: 15px;
+        font-size: 17px;
     }
     .subtitle {
-        font-size: 19px;
+        font-size: 22px;
     }
     section {
-        font-size: 15px;
+        font-size: 17px;
     }
     #ilus-repres {
         max-width: 180px;
     }
-    a.destaque {
+    /* a.destaque {
         padding: 2px;
         margin-bottom: 3px;
-    }
+    } */
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
     .subtitle {
-        font-size: 17px;
+        font-size: 22px;
     }
-    section, .p-destaque {
-        font-size: 12px;
+    section {
+        font-size: 15px;
     }
     #ilus-repres {
         max-width: 150px;
@@ -145,8 +145,11 @@ main {
     #bar-header {
         font-size: 18px;
     }
+    #top h1 {
+        font-size: 15pt;
+    }
     a.destaque {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 @media (max-width: 350px) {
