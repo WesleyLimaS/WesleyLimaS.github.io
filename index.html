@@ -4,90 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WesleyLimaS</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/slider_style.css">
-    <link rel="stylesheet" href="styles/bar.css">
-    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+    <title>Wesley Silva</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script defer src="scripts/script.js"></script>
-    <script defer src="scripts/destaque.js"></script>
-    <script defer src="scripts/slider.js"></script>
-    <div id="bar">
-        <div id="bar-header">
-            <p><a href=".">WesleyLimaS <strong>Home</strong></a></p>
-        </div>
-    </div>
-    <!--  DESTAQUE  -->
-    <div class="destaque" id="historia-quadrinhos">
-        <p class="topico-dest">Em destaque</p>
-        <h2 class="titulo-dest">Minha história em quadrinhos</h2>
-        <div id="coluna-prev-acess">
-            <div  id="dvslider">
-                <button class="btSlider" id="anterior">&lt;</button>
-                <div id="dvload">
-                <div id="dvbarra"></div>
-                </div>
-                <button class="btSlider" id="proxima">&gt;</button>
-            </div>
-            <div id="acessar-destaque">
-                <a href="quadrinhos/o-mundo-dos-lagartos/"><img src="media/arrow-left-purple.png" alt="Acessar agora"></a>
-            </div>
-        </div>
-        <h3>ForceLizards</h3>
-        <!-- INFORMAÇÕES -->
-        <div class="dest-info">
-            <p>Imagine um mundo onde os <strong>lagartos</strong> são a espécie dominante. Léo é um <strong>lagarto</strong> da tribo dos azuis. Luli é da tribo dos verdes.</p>
-            <p id="dest-cont-addi">
-                Apesar de serem de <strong>tribos diferentes</strong>, esses dois são <strong>grandes amigos</strong>. Ambos estão treinando à dias sabe-se lá porque.
-            </p>
-            <button id="show-more">Mostrar mais</button> <br>
-            <a id="dest-access-link" href="quadrinhos/o-mundo-dos-lagartos/">Mais sobre esta história</a>
-        </div>
-    </div>
+    <!-- Escrito por WesleySilva em 06/05/21 -->
+    <header>
+        <!-- cabeçalho -->
+    </header>
     <section>
-        <!-- APRESENTAÇÃO -->
-        <div id="apresentacao" class="topico">
-            <div id="cabe-topico-quem-sou" class="cabe-topico">
-                <h2 class="titulo-topico">Quem sou</h2>
+        <!-- conteúdo -->
+        <main>
+            <div id="apresentacao">
+                <h1 id="principal">Meu nome é <span class="destaque">Wesley Silva</span></h1>
+                <p class="alinhado">Atualmente estudando <strong>Desenvolvimento Web Front-end</strong>. Desenvolvimento web tem um lugar no coração de qualquer desenvolvedor, pois é quando <strong>estudamos</strong> suas lições que <strong>entendemos como funcionam</strong> as páginas que já estamos acostumados à visitar. Aprendemos ainda, sobre <strong>criptografia</strong>, <strong>integridade</strong>, <strong>protocólos</strong> e muitas <strong>outras lições interessantes</strong>.</p>
+                <button id="contratar" class="chamativo">Contrate-me</button>
             </div>
-            <div id="cont-topico-quem-sou" class="cont-topico">
-                <p>Meu nome é <strong>Wesley Silva</strong>, tenho <strong>14 anos</strong> e atualmente estou estudando <strong>desenvolvimento web</strong>. Posso te dizer que é muito empolgante, mas exige bastante foco e persistência. &#x1F628;</p>
-                <p>Eu diria que ainda estou no básico, apesar de ter aprendido muito, afinal há muitas áreas específicas e muito à se aprender.</p>
-                <h3>Saiba mais</h3>
-                <p>Apesar de estar atualmente trilhando o caminho de um <strong>desenvolvedor web front-end</strong>, eu trabalho ainda com <strong>Python</strong> para resolução de problemas simples e idéias malucas que surgem.</p>
-                <p><a href="#">Aprenda mais</a> &#x1F632;</p>
+            <div id="conheca-portfolio">
+                <h1>Explore <span class="destaque">meu portfólio</span></h1>
+                <div id="exibicao-portfolio">
+                    <div class="exibir-projeto">
+                        <img class="img-projeto" src="images/projeto-planos.jpg" alt="Projeto que representa uma página de assinatura de planos">
+                    </div>
+                    <div class="exibir-projeto">
+                        <img class="img-projeto" src="images/projeto-planos.jpg" alt="Projeto que representa uma página de assinatura de planos">
+                    </div>
+                    <button class="chamativo" id="todo-portfolio">Explorar</button>
+                </div>
             </div>
-        </div>
-        <!-- conteudo do site de forma resumida e lateral -->
-        <div id="conteudo-site" class="topico">
-            <div class="cabe-topico">
-                <p>Contéudo do site</p>
-            </div>
-            <div class="cont-topico">
-                <a href="games/">Jogos</a>
-                <a href="#">Serviços</a>
-            </div>
+        </main>
+        <div>
+            <h2><span class="destaque">Mais</span> sobre mim</h2>
+            <p class="alinhado">Para mim, <strong>a melhor parte</strong> ao estar escrevendo uma página, é <strong>trabalhar o JavaScript</strong>, pois é quando "<strong>damos vida</strong>" à nossa página. Trabalhar o <abbr title="Cascading Style Sheets">CSS</abbr> também é <strong>muito interessante</strong>.</p>
         </div>
     </section>
-    <main>
-        <!--  jogos -->
-        <div id="jogos" class="topico">
-            <div id="cab-topico-jogos" class="cabe-topico">
-                <h2 class="titulo-topico">Jogos</h2>
-            </div>
-            <div id="cont-topico-jogos" class="cont-topico">
-                <dl>
-                    <dt><a href="games/adivinhe-o-numero/">Adivinhe o Número</a></dt>
-                    <dd>
-                        <p>Tente acertar o número escolhido pelo computador! Neste jogo simples, porém divertido, você testa sua sorte.</p>
-                        <p>Neste cenário, o computador escolheu um número aleatório entre 1 e 100. Sua tarefa é descobrir e palpitar este número.</p>
-                    </dd>
-                    <dt><a href="games/">Ver todos</a></dt>
-                </dl>
-            </div>
-        </div>
-    </main>
+    <div id="projetos">
+        <h1>Veja minha atividade</h1>
+        <p id="secao-vazia">Oops! No momento esta seção está vazia! Volte mais tarde.</p>
+    </div>
+    <footer>
+        <!-- texto inferior -->
+    </footer>
 </body>
 </html>
