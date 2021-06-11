@@ -1,0 +1,135 @@
+@charset 'UTF-8';
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(240, 240, 240);
+	margin: 0px;
+	text-align: justify;
+}
+
+main {
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer {
+	margin: 20px 10px;
+	text-align: center;
+}
+
+section#atividades {
+	margin-top: 25px;
+}
+
+section#atividades div.atividade {
+	border: 2px solid grey;
+	border-radius: 2px;
+	background-color: white;
+	cursor: pointer;
+	padding: 5px;
+	margin-bottom: 6px;
+}
+
+section#atividades div.atividade > p {
+	margin: 0px;
+	color: grey;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+section#atividades div.conteudo-aberto {
+	border: 2px solid black;
+	border-radius: 2px;
+	background-color: white;
+	cursor: pointer;
+	padding: 5px;
+	margin-bottom: 6px;
+}
+
+section#atividades div.conteudo-aberto > p {
+	margin: 0px;
+	color: black;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+section#atividades div.atividade > div.conteudo-ativ {
+	display: none;
+}
+
+section#atividades div.atividade > div.conteudo-ativ > p {
+	max-width: 400px;
+}
+
+section#atividades div.atividade > div.conteudo-ativ > ul {
+	max-width: 400px;
+}
+
+img#miniatura {
+	max-width: 200px;
+	max-height: 150px;
+	border: 2px solid black;
+}
+
+p#descricao {
+	color: rgb(60, 60, 60);
+	max-width: 200px;
+}
+
+p.destaque {
+	font-weight: bold;
+}
+
+div#aviso {
+	background-color: rgba(255, 0, 0, 0.4);
+	border: 2px solid red;
+	padding: 10px;
+	margin: 5px;
+	color: black;
+}
+
+div#aviso > button {
+	cursor: pointer;
+}
+
+/* ==== PSEUDO-CLASSES ==== */
+
+section#atividades div.atividade:hover {
+	border-color: black;
+}
+
+section#atividades div.atividade:hover > p {
+	color: black;
+}
+
+@media (max-width: 700px) {
+		
+	main {
+		display: block;
+	}
+
+	p#descricao {
+		max-width: none;
+	}
+
+	section#apresentacao > section#cabecalho {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	section#apresentacao > section#cabecalho > h1 {
+		line-height: 110px;
+	}
+}
+
+@media (max-width: 450px) {
+	img#miniatura {
+		max-width: 140px;
+		max-height: 60px;
+	}
+
+	section#atividades div.atividade > p {
+		font-size: 1.07em;
+	}
+}
