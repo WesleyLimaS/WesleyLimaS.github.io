@@ -103,7 +103,7 @@ section#atividades div.atividade:hover > p {
 	color: black;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 		
 	main {
 		display: block;
