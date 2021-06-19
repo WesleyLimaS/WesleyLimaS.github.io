@@ -14,7 +14,7 @@ main {
 }
 
 footer {
-	margin: 20px 10px;
+	margin: 40px 10px;
 	text-align: center;
 }
 
@@ -58,23 +58,14 @@ section#atividades div.atividade > div.conteudo-ativ {
 	display: none;
 }
 
-section#atividades div.atividade > div.conteudo-ativ > p {
-	max-width: 400px;
-}
-
-section#atividades div.atividade > div.conteudo-ativ > ul {
-	max-width: 400px;
-}
-
 img#miniatura {
-	max-width: 200px;
-	max-height: 150px;
+	max-width: 300px;
+	max-height: 250px;
 	border: 2px solid black;
 }
 
 p#descricao {
 	color: rgb(60, 60, 60);
-	max-width: 200px;
 }
 
 p.destaque {
