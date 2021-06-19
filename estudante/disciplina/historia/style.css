@@ -81,6 +81,11 @@ div#aviso {
 	color: black;
 }
 
+#btn-compreendo {
+	width: 120px;
+        height: 40px;
+}
+
 div#aviso > button {
 	cursor: pointer;
 }
