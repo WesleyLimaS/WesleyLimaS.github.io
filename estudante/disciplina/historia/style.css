@@ -9,7 +9,7 @@ body {
 
 main {
 	margin: 10px;
-	display: flex;
+	display: block;
 	justify-content: space-between;
 }
 
