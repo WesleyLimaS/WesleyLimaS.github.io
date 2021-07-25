@@ -114,7 +114,7 @@ div#projetos {
     padding: 24px;
 }
 
-p#secao-vazia {
+p.secao-vazia {
     color: rgb(95, 95, 95);
 }
 
